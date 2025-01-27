@@ -73,11 +73,11 @@ class HoverEnv:
         # add camera
         if self.env_cfg["visualize_camera"]:
             self.cam = self.scene.add_camera(
-                res=(640, 480),
+                res=(320, 240),
                 pos=(3.5, 0.0, 2.5),
                 lookat=(0, 0, 0.5),
                 fov=30,
-                GUI=True,
+                GUI=False,
             )
 
         # add drone
