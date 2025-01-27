@@ -59,7 +59,7 @@ def main():
     obs, _ = env.reset()
 
     # max_sim_step = int(env_cfg["episode_length_s"] * env_cfg["max_visualize_FPS"])
-    max_sim_step = 500
+    max_sim_step = 1000
     with torch.no_grad():
         if args.record:
             env.cam.start_recording()
